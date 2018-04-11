@@ -1,0 +1,10 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /
+  static_files: beton5/index.html
+  upload: beton5/index.html
+- url: /(.*)
+  static_files: beton5/\1
+  upload: beton5/(.*)
